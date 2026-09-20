@@ -14,7 +14,6 @@ namespace MauiAppTempoAgora
         {
             try
             {
-                if () {
                     if (!string.IsNullOrEmpty(txt_cidade.Text))
                     {
                         Tempo? t = await DataService.GetPrevisao(txt_cidade.Text);
@@ -48,8 +47,6 @@ namespace MauiAppTempoAgora
                     {
                         lbl_res.Text = "Preencha a cidade.";
                     }
-                }
-
             }
             catch (Exception ex)
             {
